@@ -1,0 +1,26 @@
+{
+  "name": "Comunibeer",
+  "description": "Comunidade cervejeira",
+  "main": "index.php",
+  "authors": [
+    "Thiago Mendes"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/thiagotmendes/comunibeer",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "animate.css": "^3.5.2",
+    "slick-carousel": "^1.6.0",
+    "wow": "wow.js#^1.1.2",
+    "bxslider-4": "dw-bxslider-4#^4.2.12",
+    "isotope": "^3.0.3"
+  }
+}
