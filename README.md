@@ -7,7 +7,7 @@ Os arquivos deverão ser iniciados em branco, assim existe a liberadade de desen
 
 Para iniciar o processo é necessário ter o Grunt e o Bower instalados na maquina
 
-<h3> Node.js </js>
+<h3> Node.js </h3>
 
 Caso ainda não tenha o Node.js instalado utilize o link para baixar e instalar em sua maquina.
 
