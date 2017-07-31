@@ -23,7 +23,7 @@ Para utilizar o grunt deve se primeiramente realizar a instalação global, para
 
 Após realizado dentro do diretorio do tema basta utilziar o compando:
 
-# npm install 
+# npm install
 
 Assim todos os plugins necessários para o projeto serão instalados
 
@@ -49,12 +49,12 @@ Iniciará o projeto e irá criar todas as pastas com seus assets já inclusos.
 
 Constam como dependencias neste projeto:
 
-bootstrap
-font-awesome
-animate.css
-slick-carousel
-wow.js
-bxslider-4
+bootstrap <br>
+font-awesome <br>
+animate.css <br>
+slick-carousel <br>
+wow.js <br>
+bxslider-4 <br>
 isotope
 
 Depois de criado basta utilizar o comando
