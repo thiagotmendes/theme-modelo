@@ -1,6 +1,6 @@
 {
-  "name": "Comunibeer",
-  "description": "Comunidade cervejeira",
+  "name": "theme-modelo",
+  "description": "Arquivos modelo para inicio de desenvolvimento de tema wordpress",
   "main": "index.php",
   "authors": [
     "Thiago Mendes"

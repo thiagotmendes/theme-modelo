@@ -1,21 +1,21 @@
 {
-  "name": "traveltour",
+  "name": "Theme-modelo",
   "version": "1.0.0",
-  "description": "Sistema de agencias traveltour",
+  "description": "Arquivos para Theme-modelo",
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thiagotmendes/site-cadage-traveltour.git"
+    "url": "git+https://github.com/thiagotmendes/theme-modelo.git"
   },
   "author": "Thiago Mendes",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thiagotmendes/site-cadage-traveltour.git/issues"
+    "url": "https://github.com/thiagotmendes/theme-modelo.git/issues"
   },
-  "homepage": "https://github.com/thiagotmendes/site-cadage-traveltour.git#readme",
+  "homepage": "https://github.com/thiagotmendes/theme-modelo.git#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
