@@ -25,7 +25,7 @@ module.exports   = function(grunt){
           files: {
             'assets/css/main.min.css':
               [
-                'bower_components/bootstrap/dist/css/bootstrap.css',
+                // 'bower_components/bootstrap/dist/css/bootstrap.css',
                 'bower_components/font-awesome/css/font-awesome.css',
                 'bower_components/animate.css/animate.css',
                 'bower_components/slick-carousel/slick/slick.css',
@@ -50,7 +50,7 @@ module.exports   = function(grunt){
           files: {
             'assets/js/main.min.js':
             [
-              'bower_components/bootstrap/dist/js/bootstrap.js',
+              // 'bower_components/bootstrap/dist/js/bootstrap.js',
               'bower_components/slick-carousel/slick/slick.js',
               'bower_components/wow/dist/wow.js',
               'bower_components/isotope/dist/isotope.pkgd.js',
@@ -65,6 +65,9 @@ module.exports   = function(grunt){
       copy: {
         main: {
           files: [
+            {expand: true,flatten: true, src: ['node_modules/jquery/dist/jquery.min.js'], dest: 'assets/js/'},
+            {expand: true,flatten: true, src: ['node_modules/popper.js/dist/umd/popper.js'], dest: 'assets/js/'},
+            {expand: true,flatten: true, src: ['node_modules/bootstrap/dist/js/bootstrap.min.js'], dest: 'assets/js/'},
             {expand: true,flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'assets/fonts/'},
             {expand: true,flatten: true, src: ['bower_components/bootstrap/fonts/*'], dest: 'assets/fonts/'},
             {expand: true,flatten: true, src: ['bower_components/slick-carousel/slick/fonts/*'], dest: 'assets/fonts/'},
@@ -77,7 +80,8 @@ module.exports   = function(grunt){
       // watch - acompanha as modificações nos arquivos deforma altomatica
        watch: {
          options:{
-           livereload: true
+           livereload: true,
+           spawn: false
          },
          sass: {
            files: 'global/css/*.scss',
@@ -87,7 +91,25 @@ module.exports   = function(grunt){
            files:'global/js/funcoes.js',
            tasks: 'uglify'
          }
-       }
+       },
+
+       browserSync: {
+          dev: {
+            bsFiles: {
+                src : [
+                  'global/css/*.scss',
+                  'global/js/*.js',
+                  '**/*.php'
+                ]
+            },
+            options: {
+              watchTask: true,
+              proxy: "localhost/wordpress/",
+              stream: true
+            }
+          }
+        }
+
     });
 
     // carrega os plugins
@@ -97,8 +119,9 @@ module.exports   = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-browser-sync');
 
     // registra as tasks
     grunt.registerTask('site', ['smushit','copy','cssmin', 'sass', 'uglify']);
-    grunt.registerTask('live', ['watch']);
+    grunt.registerTask('live', ['browserSync','watch']);
 }

@@ -18,11 +18,17 @@
   "homepage": "https://github.com/thiagotmendes/theme-modelo.git#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-uglify": "^2.1.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
-    "grunt-smushit": "^2.1.0"
+    "grunt-smushit": "^2.1.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0"
   }
 }
