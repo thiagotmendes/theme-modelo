@@ -104,7 +104,7 @@ module.exports   = function(grunt){
             },
             options: {
               watchTask: true,
-              proxy: "localhost/wordpress/",
+              proxy: "localhost/wordpress/", // sempre alterar pela pasta do projeto
               stream: true
             }
           }
